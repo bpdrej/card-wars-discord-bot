@@ -13,7 +13,7 @@ def log_write(text):
 
 log_write("Starting BOT!!!")
 
-TOKEN = "insert your token"
+TOKEN = "MTI5MTQwMTA1MTU5NzE4MTA0MA.GGIa6m.As4hj9qAWru7gSeuaxIrQX9dA6vilP83KAcGag"
 bot = commands.Bot(command_prefix='$')
 bot.remove_command('help')
 
@@ -102,7 +102,7 @@ async def c(ctx, *, arg):
                 embed.add_field(name="Description", value=returned_card[1].rstrip(), inline=True)
                 #embed.add_field(name="Card Set", value=returned_card[9].rstrip(), inline=True)
 
-            embed.add_field(name="Report a problem: ", value="Message <@!INSERT YOUR USER ID>", inline=True)
+            embed.add_field(name="Report a problem: ", value="Message <@!BPDrej>", inline=True)
             await ctx.send(embed=embed)
             log_write(text.join(returned_card[0]))
             log_write("")
@@ -166,7 +166,7 @@ async def help(ctx, message=None):
     embed = discord.Embed(color=0xfff100)
     embed.set_author(name="Help Page")
     embed.add_field(name="Commands:", value="`$c [card name]` shows details of a card. \n `$img [card name]` shows just the image of a card.", inline=True)
-    embed.add_field(name="Report a problem: ", value="Message INSERT YOUR USER ID", inline=True)
+    embed.add_field(name="Report a problem: ", value="Message BPDrej", inline=True)
     await ctx.author.send(embed=embed)
     log_write("Sent help message to {} DMS.".format(ctx.message.author))
     await ctx.send("Check your dms!")
