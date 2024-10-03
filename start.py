@@ -13,7 +13,7 @@ def log_write(text):
 
 log_write("Starting BOT!!!")
 
-TOKEN = "MTI5MTQwMTA1MTU5NzE4MTA0MA.GGIa6m.As4hj9qAWru7gSeuaxIrQX9dA6vilP83KAcGag"
+TOKEN = "Insert token"
 bot = commands.Bot(command_prefix='$')
 bot.remove_command('help')
 
