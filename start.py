@@ -1,5 +1,6 @@
 import os
 import discord
+from discord import Intents
 from discord.ext import commands
 import csv
 import datetime
@@ -13,8 +14,11 @@ def log_write(text):
 
 log_write("Starting BOT!!!")
 
-TOKEN = "insert your token"
-bot = commands.Bot(command_prefix='$')
+intents = Intents.default()
+intents.messages = True
+
+TOKEN=""
+bot = commands.Bot(command_prefix='$', intents=intents)
 bot.remove_command('help')
 
 @bot.event
